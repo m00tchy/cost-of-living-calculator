@@ -1,2 +1,10 @@
-# cost-of-living-calculator
-生活コスト計算機
+## What this is
+
+自分の生活コスト（家賃・光熱費・食費・ジムなど）の
+月額合計と年額合計をざっくり把握するためのシンプルな計算機です。
+
+
+- フロントエンド: React + Vite
+- デプロイ: Netlify（GitHub連携）
+
+`src/App.jsx` を編集して項目を増減できます。
