@@ -11,10 +11,11 @@ export default function App() {
   const [water, setWater] = useState(3000);
   const [food, setFood] = useState(40000);
   const [gym, setGym] = useState(7000);
+  const [idealFood, setIdealFood] = useState(3000);
 
   const monthly = useMemo(() => {
-    return rent + electricity + water + food + gym;
-  }, [rent, electricity, water, food, gym]);
+    return rent + electricity + water + food + gym + idealFood;
+  }, [rent, electricity, water, food, gym, idealFood]);
 
   const yearly = monthly * 12;
 
@@ -46,6 +47,7 @@ export default function App() {
         <Row label="水道" value={water} onChange={setWater} />
         <Row label="食費" value={food} onChange={setFood} />
         <Row label="ジム" value={gym} onChange={setGym} />
+        <Row label="理想の食費" value={idealFood} onChange={setIdealFood} />
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 16 }}>
